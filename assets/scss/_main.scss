@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+
+  margin-bottom: 50px;
+  padding: $gutter;
+
+  background: rgba(#ffffff, 0.1);
+
+  flex-wrap: wrap;
+}
+
+.main {
+  background-color: #efefef;
+
+  p {
+    text-align: justify;
+  }
+
+  @media (min-width: ($small + 1)) {
+    flex: 1 0 calc(100% - $col-size);
+    padding: 0 $gutter + 5px $gutter $gutter;
+    order: 3;
+  }
+
+  @media (max-width: $small) {
+    flex: 1 0 100%;
+
+    padding: 20px;
+
+    order: 2;
+  }
+}
