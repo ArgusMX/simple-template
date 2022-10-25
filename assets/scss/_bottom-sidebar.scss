@@ -49,8 +49,11 @@
 
     @media (min-width: ($small + 1)) {
       flex: 1 0 50%;
+
       padding: $gutter + 5px $gutter $gutter + 10px;
+
       border-right: none;
+
       &::after {
         position: absolute;
         top: 0;
@@ -87,7 +90,9 @@
 
     @media (min-width: ($small +1)) {
       flex: 1 0 50%;
+
       padding: $gutter + 5px $gutter $gutter + 10px;
+
       border-left: none;
     }
 
